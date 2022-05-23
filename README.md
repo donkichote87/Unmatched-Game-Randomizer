@@ -7,4 +7,6 @@ Main functionality of the app is randomply picking characters to play with after
 In the future I plan to also add option to randomly pick map (after adding maps to API), choosing starting player and maybe adding some pictures of fighters.
 Ultimately I plan to recreate this project with React to train it a little bit.
 
+You can try it on Netlify: https://main--luminous-jalebi-14b306.netlify.app/
+
 I don't own Unmatched franchise and this API was not made for any commercial purpose, just simply for training and using it myself
