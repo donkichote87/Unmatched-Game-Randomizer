@@ -19,7 +19,7 @@ module.exports = {
 
     contentBase: path.join(__dirname, `${entryPath}`),
 
-    publicPath: "/build/",
+    publicPath: "build/",
 
     compress: true,
 
