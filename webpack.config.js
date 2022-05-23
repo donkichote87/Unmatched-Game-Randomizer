@@ -9,7 +9,7 @@ module.exports = {
 
     filename: "out.js",
 
-    path: path.resolve(__dirname, `${entryPath}/build`)
+    path: path.resolve(__dirname, `${entryPath}/build1`)
 
   },
   
@@ -17,7 +17,7 @@ module.exports = {
 
     contentBase: path.join(__dirname, `${entryPath}`),
 
-    publicPath: "build",
+    publicPath: "build2",
 
     compress: true,
 
