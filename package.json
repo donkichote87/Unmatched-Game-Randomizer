@@ -1,23 +1,23 @@
 {
-  "name": "onl_fsb_e_09_prework_javascript",
+  "name": "unmatched-bg-randomizer",
   "version": "1.0.0",
-  "description": "![Coders-Lab-1920px-no-background](https://user-images.githubusercontent.com/30623667/104709387-2b7ac180-571f-11eb-9b94-517aa6d501c9.png)",
-  "main": "index.js",
+  "description": "Basic JS randomizer for Unmatched Game",
+  "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --hot -d",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodersLab/ONL_FSB_E_09_Prework_JavaScript.git"
+    "url": "git+https://github.com/donkichote87/Unmatched-Game-Randomizer.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Kamil L",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodersLab/ONL_FSB_E_09_Prework_JavaScript/issues"
+    "url": "https://github.com/donkichote87/Unmatched-Game-Randomizer/issues"
   },
-  "homepage": "https://github.com/CodersLab/ONL_FSB_E_09_Prework_JavaScript#readme",
+  "homepage": "https://github.com/donkichote87/Unmatched-Game-Randomizer#readme",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
