@@ -9,7 +9,7 @@ module.exports = {
 
     filename: "out.js",
 
-    path: path.resolve(__dirname, "build")
+    path: path.resolve(__dirname, `${entryPath}/build`)
 
   },
   
@@ -25,9 +25,9 @@ module.exports = {
 
   },
 
-  mode: "development",
+  mode: "development"
 
-  watch: true
+ 
 
 }, 
 
@@ -52,3 +52,7 @@ module.exports = {
     }
   
   }
+
+
+
+
