@@ -1,18 +1,29 @@
 {
-  "name": "es6-react",
-  "version": "2.1.0",
+  "name": "onl_fsb_e_09_prework_javascript",
+  "version": "1.0.0",
+  "description": "![Coders-Lab-1920px-no-background](https://user-images.githubusercontent.com/30623667/104709387-2b7ac180-571f-11eb-9b94-517aa6d501c9.png)",
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot -d",
     "build": "webpack -p"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodersLab/ONL_FSB_E_09_Prework_JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodersLab/ONL_FSB_E_09_Prework_JavaScript/issues"
+  },
+  "homepage": "https://github.com/CodersLab/ONL_FSB_E_09_Prework_JavaScript#readme",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.10.1",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.7.0",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "~3"
   }
 }
