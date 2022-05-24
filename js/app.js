@@ -69,7 +69,7 @@ form.addEventListener("submit", (e) => {
             row.className = "row justify-content-around";
 
             const colFirst = document.createElement("div");
-            colFirst.className = "col-3"
+            colFirst.className = "col-5"
             
             const cardFirst = document.createElement("div");
             cardFirst.className = "card border-secondary mb-3";
@@ -97,7 +97,7 @@ form.addEventListener("submit", (e) => {
         
 
             const colSecond = document.createElement("div");
-            colSecond.className = "col-3"
+            colSecond.className = "col-5"
             const cardSecond = document.createElement("div");
             cardSecond.className = "card border-secondary mb-3";
             cardSecond.setAttribute("style", "height: 12rem")
