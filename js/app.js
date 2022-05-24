@@ -56,7 +56,7 @@ form.addEventListener("submit", (e) => {
             }
             const second = {
                 name: `${player2.value === "" ? "Player 2" : player2.value}`,
-                fighter: selectedWarriors.length > 1 ?`${selectedWarriors[Math.floor(Math.random() * selectedWarriors.length)]}` : "Game :P"
+                fighter: first.fighter !== "Buy" ?`${selectedWarriors[Math.floor(Math.random() * selectedWarriors.length)]}` : "Game :P"
             }
             
             const badge = document.createElement("span");
