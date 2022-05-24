@@ -73,7 +73,7 @@ form.addEventListener("submit", (e) => {
             
             const cardFirst = document.createElement("div");
             cardFirst.className = "card border-secondary mb-3";
-            cardFirst.setAttribute("style", "max-width: 25rem; height: 12rem")
+            cardFirst.setAttribute("style", "height: 12rem")
             const headFirst = document.createElement("div");
             headFirst.className = "card-header text-body";
             headFirst.innerHTML = first.name;
@@ -100,7 +100,7 @@ form.addEventListener("submit", (e) => {
             colSecond.className = "col-3"
             const cardSecond = document.createElement("div");
             cardSecond.className = "card border-secondary mb-3";
-            cardSecond.setAttribute("style", "max-width: 25rem; height: 12rem")
+            cardSecond.setAttribute("style", "height: 12rem")
             const headSecond = document.createElement("div");
             headSecond.className = "card-header text-body";
             headSecond.innerHTML = second.name;
