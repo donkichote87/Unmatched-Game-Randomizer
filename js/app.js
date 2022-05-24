@@ -15,7 +15,6 @@ fetch(`https://unmatched-games-api.herokuapp.com/games`)
             const input = document.createElement("input");
             input.className = "btn-check";
             input.setAttribute("type", "checkbox");
-            input.setAttribute("checked", "");
             input.setAttribute("autocomplete", "off");
             input.setAttribute("id", index);
             input.setAttribute("name", "box")
@@ -53,11 +52,11 @@ form.addEventListener("submit", (e) => {
             
             const first = {
                 name: `${player1.value === "" ? "Player 1" : player1.value}`,
-                fighter: `${selectedWarriors.splice(Math.floor(Math.random() * selectedWarriors.length), 1)}`
+                fighter: selectedWarriors.length > 1 ?`${selectedWarriors.splice(Math.floor(Math.random() * selectedWarriors.length), 1)}` : "Buy"
             }
             const second = {
                 name: `${player2.value === "" ? "Player 2" : player2.value}`,
-                fighter: `${selectedWarriors[Math.floor(Math.random() * selectedWarriors.length)]}`
+                fighter: selectedWarriors.length > 1 ?`${selectedWarriors[Math.floor(Math.random() * selectedWarriors.length)]}` : "Game :P"
             }
             
             const badge = document.createElement("span");
