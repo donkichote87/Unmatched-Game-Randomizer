@@ -60,6 +60,11 @@ form.addEventListener("submit", (e) => {
                 fighter: `${selectedWarriors[Math.floor(Math.random() * selectedWarriors.length)]}`
             }
             
+            const badge = document.createElement("span");
+            badge.className = "badge rounded-pill bg-warning";
+            badge.innerHTML = "First Player";
+
+
             const row = document.createElement("div");
             row.className = "row justify-content-around";
 
@@ -68,7 +73,7 @@ form.addEventListener("submit", (e) => {
             
             const cardFirst = document.createElement("div");
             cardFirst.className = "card border-secondary mb-3";
-            cardFirst.setAttribute("style", "max-width: 25rem; ")
+            cardFirst.setAttribute("style", "max-width: 25rem; height: 12rem")
             const headFirst = document.createElement("div");
             headFirst.className = "card-header text-body";
             headFirst.innerHTML = first.name;
@@ -89,15 +94,13 @@ form.addEventListener("submit", (e) => {
             reset.setAttribute("onClick", "window.location.reload();");
             reset.innerHTML = "Reset!";
             rowButton.appendChild(reset);
-            
-            
-
+        
 
             const colSecond = document.createElement("div");
             colSecond.className = "col-3"
             const cardSecond = document.createElement("div");
             cardSecond.className = "card border-secondary mb-3";
-            cardSecond.setAttribute("style", "max-width: 25rem;")
+            cardSecond.setAttribute("style", "max-width: 25rem; height: 12rem")
             const headSecond = document.createElement("div");
             headSecond.className = "card-header text-body";
             headSecond.innerHTML = second.name;
@@ -108,6 +111,10 @@ form.addEventListener("submit", (e) => {
             cardSecond.appendChild(bodySecond);
             colSecond.appendChild(cardSecond);
             row.appendChild(colSecond);
+
+            const bodies = [bodyFirst, bodySecond];
+            bodies[Math.floor(Math.random() * bodies.length)].appendChild(badge);
+
             mainContainer.replaceChildren(row, rowButton);
         
         })
