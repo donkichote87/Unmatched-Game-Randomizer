@@ -3,14 +3,19 @@ const form = document.querySelector("form");
 const player1 = document.querySelector("#player1");
 const player2 = document.querySelector("#player2");
 const mainContainer = document.querySelector("#maincontainer");
+const spinner = document.querySelector("#cover-spin");
 
 fetch(`https://unmatched-games-api.herokuapp.com/games`)
     .then((response) => {
         if (response.ok) {
+            setTimeout(() => {
+                spinner.setAttribute("style", "display:none;");
+              }, 1000);
             return response.json();
         }
         throw new Error("Connection problem");
     }).then(games => {
+    
         games.forEach((game, index) => {
             const input = document.createElement("input");
             input.className = "btn-check";
